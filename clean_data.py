@@ -22,8 +22,6 @@ df['price'] = clean_currency(df['price'])
 df['original_price'] = clean_currency(df['original_price'])
 df['original_price'] = df['original_price'].fillna(df['price'])
 # --- Step 3: Clean Shipping Information ---
-# Set a Pandas option to avoid future downcasting warnings (optional)
-pd.set_option('future.no_silent_downcasting', True)
 
 # Replace "N/A" or empty values in the shipping column with a default message
 # Replace "N/A" or empty strings with the default message
