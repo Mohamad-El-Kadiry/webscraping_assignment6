@@ -103,6 +103,29 @@ print(f"MSE  (Mean Squared Error):       {mse:.2f}")
 print(f"RMSE (Root Mean Squared Error):  {rmse:.2f}")
 print(f"R² Score:                         {r2:.2f}")
 
+# MAE (Mean Absolute Error): 9.74
+# MAE represents the average absolute difference between the actual and predicted values.
+# In this case, the model's predictions are off by approximately 9.74 percentage points on average.
+# A lower MAE indicates better model performance, and here it shows a moderate level of accuracy.
+
+# MSE (Mean Squared Error): 157.43
+# MSE measures the average squared difference between the actual and predicted values.
+# It penalizes larger errors more than MAE due to the squaring of differences.
+# A lower MSE indicates better performance. Here, the relatively high value indicates that the model has significant errors, though it’s not exceptionally bad.
+
+# RMSE (Root Mean Squared Error): 12.55
+# RMSE is the square root of MSE, which brings the error metric back to the original unit (percent in our case).
+# It is more sensitive to large errors than MAE. In this case, the RMSE of 12.55 suggests that our predictions are, on average, off by around 12.55 percentage points.
+# RMSE provides a clearer sense of model performance when compared to MAE, especially in scenarios where larger errors are more critical.
+
+# R² Score: 0.67
+# The R² Score (Coefficient of Determination) measures how well the model explains the variance in the target variable (discount_percentage).
+# It ranges from 0 to 1, where a higher value means a better fit. Here, an R² of 0.67 suggests that our model explains about 67% of the variance in the discount percentage.
+# This is a decent value, indicating that the model is performing reasonably well but has room for improvement, especially with data imbalance and potential feature issues.
+
+
+
+
 # --------------------
 # Visualizations
 # --------------------
